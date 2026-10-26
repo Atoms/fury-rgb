@@ -54,3 +54,7 @@ files under `/home` directly.
 
 ASRock Z790 Pro RS WiFi, i7-14700K, Fedora 44 (kernel 7.2), 2× Kingston FURY
 DDR5-5200 32 GB (`KF552C36…`), slots 1 and 3 → controllers at `0x61`/`0x63`.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
