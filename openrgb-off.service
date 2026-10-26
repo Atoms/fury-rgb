@@ -1,0 +1,12 @@
+[Unit]
+Description=Turn off Kingston FURY DDR5 RAM RGB lighting
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/sbin/modprobe -a i2c_i801 i2c_dev
+ExecStart=/usr/bin/python3 /home/asterns/projects/fury-rgb/fury_rgb.py off
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
